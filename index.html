@@ -1,15 +1,85 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Meriam Arifa</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Meriam Arifa | PhD Candidate in Economics</title>
+  <link rel="stylesheet" href="assets/style.css" />
 </head>
 <body>
-  <h1>Meriam Arifa</h1>
-  <p>PhD Candidate in Economics, Concordia University</p>
-  <h2>Research Interests</h2>
-  <p>Econometrics, Applied Microeconometrics, Causal Inference</p>
-  <h2>Contact</h2>
-  <p>Email: yourname@concordia.ca</p>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a class="brand" href="index.html">Meriam Arifa</a>
+      <nav class="menu">
+        <a class="active" href="index.html">Home</a>
+        <a href="research.html">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="teaching.html">Teaching</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div style="color:var(--accent); font-family: Georgia, 'Times New Roman', Times, serif; font-size:56px; font-weight:700; margin-bottom:8px;">
+        About Me
+      </div>
+
+      <!-- Upload your photo as: assets/profile.jpg -->
+      <img class="portrait" src="assets/profile.jpg" alt="Meriam Arifa portrait" />
+
+      <h1>Meriam Arifa</h1>
+      <p class="subtitle">PhD Candidate in Economics</p>
+      <p class="subtitle2">Concordia University, Montréal</p>
+    </section>
+
+    <section class="section">
+      <h2>About</h2>
+      <p>
+        I am a PhD candidate in Economics at Concordia University. My research focuses on econometric methods for dependent data,
+        with emphasis on robust inference under weak dependence and misspecification, and applications to nonlinear policy evaluation.
+      </p>
+      <p class="small">
+        You can find details on my work on the <a href="research.html">Research</a> page and download my <a href="cv.html">CV</a>.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Research Interests</h2>
+      <span class="badge">Econometrics</span>
+      <span class="badge">Robust inference</span>
+      <span class="badge">Empirical likelihood</span>
+      <span class="badge">Weak dependence</span>
+      <span class="badge">Causal inference</span>
+      <span class="badge">Spatial &amp; time-series methods</span>
+
+      <hr class="sep" />
+
+      <div class="grid">
+        <div>
+          <h2 style="margin-top:0;">Quick Links</h2>
+          <p><a class="btn" href="research.html">Research</a></p>
+          <p><a class="btn" href="cv.html">Download CV</a></p>
+        </div>
+        <div>
+          <h2 style="margin-top:0;">Currently</h2>
+          <p>
+            I work on econometric theory and simulation methods for estimation and inference under dependence, including block bootstrap procedures
+            and robust moment-based estimators.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">
+      © <span id="y"></span> Meriam Arifa
+    </div>
+  </main>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
